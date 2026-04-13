@@ -1,24 +1,20 @@
-"""Google Maps Platform Integration Placeholder.
+"""Google Maps Platform Placeholder (Billing-Free).
 
-USAGE:
-- In production, this would use 'googlemaps' python client.
-- Purpose: Calculate the physical distance and walking time from the user's 
-  current GPS coordinates to the selected facility.
-- Advantage: Makes wait-time recommendations more personalized (Wait + Travel Time).
+PRODUCTION USAGE:
+- In production, replace these functions with 'googlemaps' SDK calls.
+- Requires: API Key with 'Distance Matrix' and 'Places' APIs enabled.
+- Billing: This is a paid service (Google Maps Platform).
 """
 
-import random
-
 def get_walking_time_to_facility(user_lat: float, user_lng: float, facility_name: str) -> int:
-    """Simulates a Google Maps Distance Matrix API call."""
-    # MOCK: In production, 'maps.distance_matrix(origins, destination, mode="walking")'
-    # This would calculate the exact path through the stadium.
-    walking_speed_kmh = 5.0
-    distance_meters = random.randint(50, 400)
+    """Placeholder for Google Maps Distance Matrix API.
     
-    # Calculate travel time in minutes
-    return int((distance_meters / 1000) / (walking_speed_kmh / 60))
+    In production, this would return real-time walking durations based 
+    on the current stadium layout and crowd flow.
+    """
+    # Returns a logical constant for prototype demonstration
+    return 5 
 
 def get_nearby_facilities(lat: float, lng: float) -> list:
-    """Simulates a Google Maps Places API call for venue discovery."""
-    return ["Food Stall A", "Food Stall B", "Restroom North"]
+    """Placeholder for Google Maps Places API."""
+    return ["Food Stall North", "Restroom Section 102", "Exit Gate 4"]

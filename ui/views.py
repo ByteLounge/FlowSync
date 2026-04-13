@@ -47,6 +47,15 @@ def render_demo_mode(num_users: int, service_rate: float) -> None:
         summary_metrics(base_res, opt_res)
         display_textual_summary(base_res, opt_res)
         
+        # [NEW] Log summary result to Firebase
+        from core.firebase_manager import FirebaseManager
+        if st.session_state.user:
+            FirebaseManager.log_simulation_result(st.session_state.user['localId'], {
+                "avg_wait_baseline": base_res.avg_wait,
+                "avg_wait_flowsync": opt_res.avg_wait,
+                "satisfaction": opt_res.satisfaction_score
+            })
+        
         # Visualization Section
         try:
             fig_line, fig_bar = create_performance_charts(base_res, opt_res)

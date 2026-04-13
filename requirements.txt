@@ -3,3 +3,5 @@ matplotlib
 numpy
 pandas
 pytest
+python-dotenv
+Pyrebase4
