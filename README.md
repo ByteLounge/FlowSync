@@ -4,6 +4,10 @@
 
 ---
 
+**Hosted:** https://flow-sync.streamlit.app/
+
+---
+
 ## 🎯 Problem Statement
 Large-scale events, such as stadium matches or concerts, suffer from **extreme peak congestion** at facilities (food stalls, restrooms, exits) during specific windows like halftime or the end of the show. This leads to:
 - **High Waiting Times:** Frustrated users spend significant portions of the event in queues.
