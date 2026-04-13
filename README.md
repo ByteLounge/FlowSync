@@ -19,6 +19,14 @@ The system prioritizes minimal user interaction by providing a single, context-a
 
 ---
 
+## UI
+
+<img width="1908" height="870" alt="Screenshot 2026-04-14 001718" src="https://github.com/user-attachments/assets/6f4d2ea0-3e69-491c-afce-b258600bb6ac" />
+<img width="1045" height="843" alt="Screenshot 2026-04-14 001747" src="https://github.com/user-attachments/assets/698d170d-7dc1-4a2a-8b2d-08afee5a83da" />
+<img width="946" height="663" alt="Screenshot 2026-04-14 001759" src="https://github.com/user-attachments/assets/c01beb64-3cea-47b0-a615-4ab8aa0f5ddb" />
+
+---
+
 ## 🧠 Approach and Logic
 The system utilizes a **Predictive Time-Shifting** algorithm.
 
